@@ -23,11 +23,21 @@ COPY_BTN.addEventListener("click", () => {
 
 RANGE_BAR.addEventListener("input", () => {
   PICKER_VALUE_BOX.value = RANGE_BAR.value;
+  if (RANGE_BAR.value >= 12) {
+    VICIDIAL_CHECK_BOX.checked = true;
+  } else {
+    VICIDIAL_CHECK_BOX.checked = false;
+  }
   obtainCurrentTime();
 });
 
 PICKER_VALUE_BOX.addEventListener("input", () => {
   RANGE_BAR.value = PICKER_VALUE_BOX.value;
+  if (PICKER_VALUE_BOX.value >= 12) {
+    VICIDIAL_CHECK_BOX.checked = true;
+  } else {
+    VICIDIAL_CHECK_BOX.checked = false;
+  }
   obtainCurrentTime();
 });
 //para generar el codigo automatiucamente al cargar la pagina
@@ -195,8 +205,8 @@ function activateVicidialLength() {
   if (VICIDIAL_CHECK_BOX.checked == true) {
     PICKER_VALUE_BOX.value = 12;
     RANGE_BAR.value = PICKER_VALUE_BOX.value;
-    PICKER_VALUE_BOX.disabled = true;
-    RANGE_BAR.disabled = true;
+    PICKER_VALUE_BOX.disabled = false;
+    RANGE_BAR.disabled = false;
     obtainCurrentTime();
   } else if (VICIDIAL_CHECK_BOX.checked == false) {
     PICKER_VALUE_BOX.value = 8;
@@ -211,6 +221,10 @@ function incrementTheLength() {
   if (PICKER_VALUE_BOX.value != 12) {
     ++PICKER_VALUE_BOX.value;
     RANGE_BAR.value = PICKER_VALUE_BOX.value;
+    if (PICKER_VALUE_BOX.value >= 12) {
+      VICIDIAL_CHECK_BOX.checked = true;
+    }
+    PICKER_VALUE_BOX.disabled = false;
     // ADDITION_BTN.style.backgroundColor = "red";
     obtainCurrentTime();
   }
