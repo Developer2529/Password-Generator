@@ -53,7 +53,7 @@ MINUS_BTN.addEventListener("click", decrementTheLength);
 
 function obtainCurrentTime() {
   let currentHour = new Date();
-  let claroName = "Claro";
+  let claroName = "Coder";
   let hour = currentHour.getHours();
   let minute = currentHour.getMinutes();
   let second = currentHour.getSeconds();
