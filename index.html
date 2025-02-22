@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="IMG/red_password_icon.svg">
+    <title>Generador de Password</title>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Generador De Password TI Filiales</h1>
+    </header>
+
+    <br>
+
+    <main>
+        <div class="flex-container">
+            <div class="password-box">
+                <h2 id="password">Generar password</h2>
+            </div>
+            <div class="message-box">
+                <p id="message"></p>
+            </div>
+
+            <div class="copy-update-box">
+                <img disabled id="copy-btn" src="IMG/copy_icon.png" alt="copy-icon" width="45" height="45" class="image-1">
+
+                <img id="update-btn" src="IMG/refresh_icon.png" alt="refresh-icon" width="45" height="45"
+                    class="image-2">
+            </div>
+
+            <div class="length-picker-box">
+                <input class="lengthPickerBox" type="number" id="quantity"  min="8" max="12" value="8">
+            </div>
+
+            <div class="range-box">             
+                  
+               
+              
+                <?xml version="1.0" ?><svg class="minus-btn" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256C397.4 512 512 397.4 512 256S397.4 0 256 0zM352 280h-192C146.8 
+                    280 136 269.2 136 256c0-13.2 10.8-24 24-24h192C365.2 232 376 242.8 376 256C376 269.2 365.2 280 352 280z"/></svg>
+                <input class="number" type="range" id="my-range" name="vol" min="8" max="12" value="8">
+                <svg class="addition-btn" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><path d="M12,1C5.9,1,1,5.9,1,12s4.9,11,11,11s11-4.9,11-11S18.1,1,12,1z M17,14h-3v3c0,1.1-0.9,2-2,2s-2-0.9-2-2v-3H7   c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2h3V7c0-1.1,0.9-2,2-2s2,0.9,2,2v3h3c1.1,0,2,0.9,2,2C19,13.1,18.1,14,17,14z" id="add"/></g></svg>
+            </div>
+
+            <div class="vicidialBtn">
+                <label class="switch">
+                    <input type="checkbox" id="vicidial-checkbox" schecked>
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+
+            <div class="vicidial-box">
+                <p>Vicidial length</p>
+            </div>
+
+       
+        </div>
+
+      
+
+ 
+      </main>  
+
+    
+       
+   
+
+    <script src="mainPG.JS"></script>
+</body>
+
+</html>
